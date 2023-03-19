@@ -1,3 +1,5 @@
+using AdotePetInnovation.Extensions;
+
 namespace AdotePetInnovation
 {
     public class Program
@@ -8,6 +10,8 @@ namespace AdotePetInnovation
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.ConfigureMongoDBSettings(builder.Configuration);
+            builder.Services.ConfigureRepositories();
 
             var app = builder.Build();
 
