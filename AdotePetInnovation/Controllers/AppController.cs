@@ -8,5 +8,10 @@ namespace AdotePetInnovation.Controllers
         {
             return View();
         }
+        public IActionResult Doar()
+        {
+            return View();
+        }
+
     }
 }
