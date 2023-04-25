@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\AdotePetInnovation.csproj": {}
+    "E:\\Projetos do GitHub\\AdotePetInnovation\\AdotePetInnovation\\AdotePetInnovation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\AdotePetInnovation.csproj": {
+    "E:\\Projetos do GitHub\\AdotePetInnovation\\AdotePetInnovation\\AdotePetInnovation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\AdotePetInnovation.csproj",
+        "projectUniqueName": "E:\\Projetos do GitHub\\AdotePetInnovation\\AdotePetInnovation\\AdotePetInnovation.csproj",
         "projectName": "AdotePetInnovation",
-        "projectPath": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\AdotePetInnovation.csproj",
-        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\obj\\",
+        "projectPath": "E:\\Projetos do GitHub\\AdotePetInnovation\\AdotePetInnovation\\AdotePetInnovation.csproj",
+        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+        "outputPath": "E:\\Projetos do GitHub\\AdotePetInnovation\\AdotePetInnovation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
