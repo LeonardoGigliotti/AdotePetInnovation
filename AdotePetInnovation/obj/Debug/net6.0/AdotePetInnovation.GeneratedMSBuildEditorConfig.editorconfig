@@ -16,12 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\leona\Desktop\AdotePetInnovation\AdotePetInnovation
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Conta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXENvbnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Doar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXERvYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Mensagens.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXE1lbnNhZ2Vucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Home/Index.cshtml]

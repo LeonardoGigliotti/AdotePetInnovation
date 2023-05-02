@@ -12,6 +12,15 @@ namespace AdotePetInnovation.Controllers
         {
             return View();
         }
+        public IActionResult Conta()
+        {
+            return View();
+        }
+        public IActionResult Mensagens  ()
+        {
+            return View();
+        }
+
 
     }
 }
