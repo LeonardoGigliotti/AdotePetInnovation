@@ -16,11 +16,15 @@ namespace AdotePetInnovation.Controllers
         {
             return View();
         }
-        public IActionResult Mensagens  ()
+        public IActionResult Mensagens()
         {
             return View();
         }
 
-
+        [HttpPost]
+        public IActionResult Publicar(IDictionary<string, object> model)
+        {
+            return new JsonResult(model.First());
+        }
     }
 }

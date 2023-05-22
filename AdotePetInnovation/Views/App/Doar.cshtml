@@ -2,9 +2,31 @@
     ViewData["Title"] = "Adotepetinnovation";
 }
 
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#MeuBotao").click(function () {
+                $.ajax({
+                    url: "/App/Publicar",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    data: JSON.stringify(
+                        {
+                            "id":"123"
+                        }
+                    ),
+                    success: function (result) {
+                        alert(result)
+                    }
+                });
+            });
+        });
+    </script>
+}
+
 <link rel="stylesheet" href="~/css/menu.css" type="text/css" />
 <script src="~/js/menu.js"> </script>
-
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,6 +36,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="~/js/doar.js"> </script>
 <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
@@ -49,7 +72,7 @@
     </div>
 
     <h1>Abaixo digite as informações do Pet que deseja Doar</h1>
-    <form>
+   <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -70,6 +93,13 @@
     <label for="exampleInputEmail1" class="form-label">Adicionar Fotos</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
-  <button type="submit" class="btn btn-primary">Publicar</button>
-  </form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Celular para contato</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <button id="btnPublicar">Publicar</button>
+  <div class="btn btn-primary" id="MeuBotao">
+      publicar
+  </div>
+   </form>
 </body>
