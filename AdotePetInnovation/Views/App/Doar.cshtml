@@ -9,13 +9,17 @@
                 $.ajax({
                     url: "/App/Publicar",
                     type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    data: JSON.stringify(
-                        {
-                            "id":"123"
+                
+                    dataType: "jsonp",
+                    data: {
+                        model:{
+                            nome: $("#txtNome").val(),
+                            idade: $("#txtIdade").val(),
+                            raca: $("#txtRaca").val(),
+                            porte: $("#txtPorte").val(),
+                            celular: $("#txtCelular").val()
                         }
-                    ),
+                    },
                     success: function (result) {
                         alert(result)
                     }
@@ -75,19 +79,19 @@
    <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="txtNome" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Idade</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="txtIdade" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Raça</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="txtRaca" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Porte</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="txtPorte" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Adicionar Fotos</label>
@@ -95,7 +99,7 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Celular para contato</label>
-    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="number" class="form-control" id="txtCelular" aria-describedby="emailHelp">
   </div>
   <button id="btnPublicar">Publicar</button>
   <div class="btn btn-primary" id="MeuBotao">

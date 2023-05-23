@@ -1,9 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AdotePetInnovation.Models;
+using AdotePetInnovation.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AdotePetInnovation.Controllers
 {
     public class AppController : Controller
     {
+        private readonly ILogger<AppController> _logger;
+
+        private readonly IPublicarRepository _repo;
+        public AppController(IPublicarRepository repo
+, ILogger<AppController> logger)
+        {
+            _repo = repo;
+            _logger = logger;
+        }
         public IActionResult Index()
         {
             return View();
@@ -22,9 +33,13 @@ namespace AdotePetInnovation.Controllers
         }
 
         [HttpPost]
-        public IActionResult Publicar(IDictionary<string, object> model)
+        public IActionResult Publicar(PublicarRequest model)
         {
-            return new JsonResult(model.First());
+            _repo.CreateAsync(new Dog
+            {
+                Name= model.nome
+            });
+            return new JsonResult(model);
         }
     }
 }
