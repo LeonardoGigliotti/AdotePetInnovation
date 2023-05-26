@@ -5,69 +5,68 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AdotePetInnovation
 build_property.RootNamespace = AdotePetInnovation
-build_property.ProjectDir = C:\Users\leona\Desktop\AdotePetInnovation\AdotePetInnovation\
+build_property.ProjectDir = C:\Users\etec\Desktop\AdotePetInnovation\AdotePetInnovation\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\leona\Desktop\AdotePetInnovation\AdotePetInnovation
+build_property.MSBuildProjectDirectory = C:\Users\etec\Desktop\AdotePetInnovation\AdotePetInnovation
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Conta.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Conta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXENvbnRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Doar.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Doar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXERvYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Index.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Mensagens.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/App/Mensagens.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXE1lbnNhZ2Vucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Home/Index.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Home/Privacy.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Home/Sobre.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Home/Sobre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTb2JyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Shared/Error.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Signin/Login.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Signin/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbmluXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Signup/Create.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Signup/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbnVwXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/_ViewImports.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/_ViewStart.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leona/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Shared/_Layout.cshtml]
+[C:/Users/etec/Desktop/AdotePetInnovation/AdotePetInnovation/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-96wo7cmq0s
