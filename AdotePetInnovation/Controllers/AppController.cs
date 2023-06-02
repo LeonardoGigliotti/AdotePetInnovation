@@ -37,7 +37,11 @@ namespace AdotePetInnovation.Controllers
         {
             _repo.CreateAsync(new Dog
             {
-                Name= model.nome
+                Name= model.nome,
+                Idade= model.idade,
+                Raca= model.raca,
+                Porte= model.porte,
+                Celular= model.celular
             });
             return new JsonResult(model);
         }

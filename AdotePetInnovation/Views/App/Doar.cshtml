@@ -9,10 +9,10 @@
                 $.ajax({
                     url: "/App/Publicar",
                     type: "POST",
-                
+                    contentType: "application/json,
                     dataType: "jsonp",
                     data: {
-                        model:{
+                        model: {
                             nome: $("#txtNome").val(),
                             idade: $("#txtIdade").val(),
                             raca: $("#txtRaca").val(),
@@ -20,8 +20,8 @@
                             celular: $("#txtCelular").val()
                         }
                     },
-                    success: function (result) {
-                        alert(result)
+                    success: function () {
+                        alert("Dog incluido com sucesso")
                     }
                 });
             });

@@ -17,13 +17,21 @@ namespace AdotePetInnovation.Models
         [JsonPropertyName("Name")]
         public string Name { get; set; }
 
-        [BsonElement("email")]
-        [JsonPropertyName("Email")]
-        public string Email { get; set; }
+        [BsonElement("idade")]
+        [JsonPropertyName("Idade")]
+        public string Idade { get; set; }
 
-        [BsonElement("password")]
-        [JsonPropertyName("Password")]
-        public string Password { get; set; }
+        [BsonElement("raca")]
+        [JsonPropertyName("Raca")]
+        public string Raca { get; set; }
+
+        [BsonElement("porte")]
+        [JsonPropertyName("Porte")]
+        public string Porte { get; set; }
+
+        [BsonElement("celular")]
+        [JsonPropertyName("Celular")]
+        public string Celular { get; set; }
 
     }
 }
