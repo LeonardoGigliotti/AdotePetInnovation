@@ -41,7 +41,26 @@ namespace AdotePetInnovation.Controllers
                 Idade= model.idade,
                 Raca= model.raca,
                 Porte= model.porte,
-                Celular= model.celular
+                Cidade= model.cidade,
+                Estado=model.estado,
+                Celular = model.celular
+            });
+            return new JsonResult(model);
+        }
+
+        [HttpPost]
+        public IActionResult Conta(ContaRequest model)
+        {
+            _repo.CreateAsync(new DoadorEAdotante
+            {
+                Name= model.nome,
+                Email= model.email,
+                Rg= model.rg,
+                Cpf= model.cpf,
+                Celular= model.celular,
+                Cidade= model.cidade,
+                Estado= model.estado,
+                Cep= model.cep
             });
             return new JsonResult(model);
         }

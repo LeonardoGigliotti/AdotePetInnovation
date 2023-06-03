@@ -9,19 +9,20 @@
                 $.ajax({
                     url: "/App/Publicar",
                     type: "POST",
-                    contentType: "application/json,
-                    dataType: "jsonp",
+                    dataType: "json",
                     data: {
                         model: {
                             nome: $("#txtNome").val(),
                             idade: $("#txtIdade").val(),
                             raca: $("#txtRaca").val(),
                             porte: $("#txtPorte").val(),
+                            cidade: $("#txtCidade").val(),
+                            estado: $("#txtEstado").val(),
                             celular: $("#txtCelular").val()
                         }
                     },
                     success: function () {
-                        alert("Dog incluido com sucesso")
+                        alert("Pet incluido com sucesso")
                     }
                 });
             });
@@ -98,10 +99,17 @@
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Cidade</label>
+    <input type="text" class="form-control" id="txtCidade" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Estado</label>
+    <input type="text" class="form-control" id="txtEstado" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Celular para contato</label>
     <input type="number" class="form-control" id="txtCelular" aria-describedby="emailHelp">
   </div>
-  <button id="btnPublicar">Publicar</button>
   <div class="btn btn-primary" id="MeuBotao">
       publicar
   </div>

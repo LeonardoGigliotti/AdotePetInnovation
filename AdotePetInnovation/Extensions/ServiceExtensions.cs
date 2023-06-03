@@ -36,5 +36,6 @@ public static class ServiceExtensions
     {
         services.AddSingleton<IPublicarRepository, PublicarRepository>();
         services.AddSingleton<IUserRepository, UserRepository>();
+        services.AddSingleton<IContaRepository, ContaRepository>();
     }
 }

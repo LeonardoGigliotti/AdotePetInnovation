@@ -5,9 +5,9 @@ using System.Text.Json.Serialization;
 
 namespace AdotePetInnovation.Models
 {
-    [Table("dogs")]
+    [Table("DoadoresEAdotantes")]
     [BsonIgnoreExtraElements]
-    public class Dog
+    public class DoadorEAdotante
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
@@ -17,17 +17,21 @@ namespace AdotePetInnovation.Models
         [JsonPropertyName("Name")]
         public string Name { get; set; }
 
-        [BsonElement("idade")]
-        [JsonPropertyName("Idade")]
-        public string Idade { get; set; }
+        [BsonElement("email")]
+        [JsonPropertyName("Email")]
+        public string Email { get; set; }
 
-        [BsonElement("raca")]
-        [JsonPropertyName("Raca")]
-        public string Raca { get; set; }
+        [BsonElement("rg")]
+        [JsonPropertyName("Rg")]
+        public string Rg { get; set; }
 
-        [BsonElement("porte")]
-        [JsonPropertyName("Porte")]
-        public string Porte { get; set; }
+        [BsonElement("cpf")]
+        [JsonPropertyName("Cpf")]
+        public string Cpf { get; set; }
+
+        [BsonElement("celular")]
+        [JsonPropertyName("Celular")]
+        public string Celular { get; set; }
 
         [BsonElement("cidade")]
         [JsonPropertyName("Cidade")]
@@ -37,9 +41,9 @@ namespace AdotePetInnovation.Models
         [JsonPropertyName("Estado")]
         public string Estado { get; set; }
 
-        [BsonElement("celular")]
-        [JsonPropertyName("Celular")]
-        public string Celular { get; set; }
+        [BsonElement("cep")]
+        [JsonPropertyName("Cep")]
+        public string Cep { get; set; }
 
     }
 }

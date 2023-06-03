@@ -2,6 +2,35 @@
     ViewData["Title"] = "Adotepetinnovation";
 }
 
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#BotaoSalvarConta").click(function () {
+                $.ajax({
+                    url: "/App/Publicar",
+                    type: "POST",
+                    dataType: "json",
+                    data: {
+                        model: {
+                            nome: $("#txtNomeConta").val(),
+                            email: $("#txtEmailConta").val(),
+                            rg: $("#txtRgConta").val(),
+                            cpf: $("#txtCpfConta").val(),
+                            celular: $("#txtCelularConta").val(),
+                            cidade: $("#txtCidade").val(),
+                            estado: $("#txtEstado").val(),
+                            cep: $("#txtCepConta").val()
+                        }
+                    },
+                    success: function () {
+                        alert("Conta salva com sucesso")
+                    }
+                });
+            });
+        });
+    </script>
+}
+
 <link rel="stylesheet" href="~/css/menu.css" type="text/css" />
 <script src="~/js/menu.js"> </script>
 
@@ -59,30 +88,32 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">RG</label>
-    <input type="number" class="form-control" id="txtRGConta">
+    <input type="number" class="form-control" id="txtRgConta">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">CPF</label>
-    <input type="number" class="form-control" id="txtCPFConta">
+    <input type="number" class="form-control" id="txtCpfConta">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Celular</label>
     <input type="text" class="form-control" id="txtCelularConta">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Endereço</label>
-    <input type="text" class="form-control" id="txtEnderecoConta">
+    <label for="exampleInputPassword1" class="form-label">Cidade</label>
+    <input type="text" class="form-control" id="txtCidade">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Estado</label>
+    <input type="text" class="form-control" id="txtEstado">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">CEP</label>
-    <input type="number" class="form-control" id="txtCEPConta">
+    <input type="number" class="form-control" id="txtCepConta">
   </div>
-  //o buton alterar não esta configurado
   <button type="submit" class="btn btn-primary">Alterar</button> 
 
-  <button id="MeuBotaoConta">Salvar</button>
   <div class="btn btn-primary" id="BotaoSalvarConta">
-      publicar
+      Salvar
   </div>
     </form>
 
