@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace AdotePetInnovation.Models
 {
-    [Table("DoadoresEAdotantes")]
+    [Table("DoadoreEAdotantes")]
     [BsonIgnoreExtraElements]
     public class DoadorEAdotante
     {

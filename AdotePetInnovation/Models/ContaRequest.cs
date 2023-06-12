@@ -2,13 +2,13 @@
 {
     public class ContaRequest
     {
-        public string nome { get; set; }
-        public string email { get; set; }
-        public string rg { get; set; }
-        public string cpf { get; set; }
-        public string celular { get; set; }
-        public string cidade { get; set; }
-        public string estado { get; set; }
-        public string cep { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string Rg { get; set; }
+        public string Cpf { get; set; }
+        public string Celular { get; set; }
+        public string Cidade { get; set; }
+        public string Estado { get; set; }
+        public string Cep { get; set; }
     }
 }

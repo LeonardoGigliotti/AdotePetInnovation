@@ -37,12 +37,12 @@ namespace AdotePetInnovation.Controllers
         {
             _repo.CreateAsync(new Dog
             {
-                Name= model.nome,
-                Idade= model.idade,
-                Raca= model.raca,
-                Porte= model.porte,
-                Cidade= model.cidade,
-                Estado=model.estado,
+                Name = model.nome,
+                Idade = model.idade,
+                Raca = model.raca,
+                Porte = model.porte,
+                Cidade = model.cidade,
+                Estado = model.estado,
                 Celular = model.celular
             });
             return new JsonResult(model);
@@ -53,14 +53,14 @@ namespace AdotePetInnovation.Controllers
         {
             _repo.CreateAsync(new DoadorEAdotante
             {
-                Name= model.nome,
-                Email= model.email,
-                Rg= model.rg,
-                Cpf= model.cpf,
-                Celular= model.celular,
-                Cidade= model.cidade,
-                Estado= model.estado,
-                Cep= model.cep
+                Name= model.Nome,
+                Email= model.Email,
+                Rg= model.Rg,
+                Cpf= model.Cpf,
+                Celular= model.Celular,
+                Cidade= model.Cidade,
+                Estado= model.Estado,
+                Cep= model.Cep
             });
             return new JsonResult(model);
         }
