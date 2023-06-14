@@ -8,11 +8,13 @@ namespace AdotePetInnovation.Controllers
     {
         private readonly ILogger<AppController> _logger;
 
-        private readonly IPublicarRepository _repo;
-        public AppController(IPublicarRepository repo
-, ILogger<AppController> logger)
+        private readonly IPublicarRepository _publicarRepository;
+        private readonly IContaRepository _contaRepository;
+
+        public AppController(IPublicarRepository publicarRepository, IContaRepository contarepository, ILogger<AppController> logger)
         {
-            _repo = repo;
+            _contaRepository = contarepository;
+            _publicarRepository = publicarRepository;
             _logger = logger;
         }
         public IActionResult Index()
@@ -35,7 +37,7 @@ namespace AdotePetInnovation.Controllers
         [HttpPost]
         public IActionResult Publicar(PublicarRequest model)
         {
-            _repo.CreateAsync(new Dog
+            _publicarRepository.CreateAsync(new Dog
             {
                 Name = model.nome,
                 Idade = model.idade,
@@ -51,7 +53,7 @@ namespace AdotePetInnovation.Controllers
         [HttpPost]
         public IActionResult Conta(ContaRequest model)
         {
-            _repo.CreateAsync(new DoadorEAdotante
+            _contaRepository.CreateAsync(new DoadorEAdotante
             {
                 Name= model.Nome,
                 Email= model.Email,
