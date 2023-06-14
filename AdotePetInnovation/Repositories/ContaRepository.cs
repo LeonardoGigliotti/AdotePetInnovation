@@ -9,7 +9,7 @@ public class ContaRepository : IContaRepository
 
     public ContaRepository(IMongoDatabase mongoDatabase)
     {
-        _collection = mongoDatabase.GetCollection<DoadorEAdotante>("doadorEAdotante");
+        _collection = mongoDatabase.GetCollection<DoadorEAdotante>("doadoreadotante");
     }
 
     public async Task CreateAsync(DoadorEAdotante doadorEAdotante) =>
