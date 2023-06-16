@@ -13,5 +13,8 @@ public class PublicarRepository : IPublicarRepository
     }
 
     public async Task CreateAsync(Dog dog) =>
-        await _collection.InsertOneAsync(dog);    
+        await _collection.InsertOneAsync(dog);
+
+    public async Task<List <Dog>> FindAll() =>
+        await _collection.FindAsync().ToList();
 }

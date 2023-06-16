@@ -19,6 +19,7 @@ namespace AdotePetInnovation.Controllers
         }
         public IActionResult Index()
         {
+            var dogs = _publicarRepository.FindAll();
             return View();
         }
         public IActionResult Doar()
