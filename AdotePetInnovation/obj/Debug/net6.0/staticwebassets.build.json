@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JHEcS9AzGxqhVrwrp1KZi8e0VLouSHB+KjgEGKNDVsk=",
+  "Hash": "YML9JeVfbnDFeeY5j38y7Mb76Bo4ey2Qd+Qve8DVw5w=",
   "Source": "AdotePetInnovation",
   "BasePath": "_content/AdotePetInnovation",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\TelaAdotePet.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\img\\TelaAdotePet2.jpg",
+      "SourceId": "AdotePetInnovation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\",
+      "BasePath": "_content/AdotePetInnovation",
+      "RelativePath": "img/TelaAdotePet2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\TelaAdotePet2.jpg"
     },
     {
       "Identity": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\js\\doar.js",
