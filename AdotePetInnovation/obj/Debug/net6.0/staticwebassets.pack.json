@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\img\\TelaAdotePet2.jpg"
     },
     {
+      "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\img\\TelaPrincipal.png",
+      "PackagePath": "staticwebassets\\img\\TelaPrincipal.png"
+    },
+    {
       "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\img\\dog1.jpg",
       "PackagePath": "staticwebassets\\img\\dog1.jpg"
     },

@@ -29,6 +29,10 @@ namespace AdotePetInnovation.Models
         [JsonPropertyName("Porte")]
         public string Porte { get; set; }
 
+        [BsonElement("foto")]
+        [JsonPropertyName("Foto")]
+        public string Foto { get; set; }
+
         [BsonElement("cidade")]
         [JsonPropertyName("Cidade")]
         public string Cidade { get; set; }
