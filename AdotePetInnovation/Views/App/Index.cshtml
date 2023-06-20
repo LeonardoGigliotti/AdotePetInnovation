@@ -1,10 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Adotepetinnovation";
+    ViewData[""] = "";
 }
 
 <link rel="stylesheet" href="~/css/menu.css" type="text/css" />
 <script src="~/js/menu.js"> </script>
-
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -25,7 +27,8 @@
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">AdotePet</span> </a>
+                <a class="nav_logo"> <img src="~/img/iconlogo.png" width="30"/>
+                    <span class="nav_logo-name">AdotePet</span> </a>
                 <div class="nav_list"> 
                     <a href="#" class="nav_link active"> 
                         <i class='bx bx-grid-alt nav_icon'></i>
@@ -33,12 +36,14 @@
                     </a> <a href="~/App/Conta" class="nav_link">
                         <i class='bx bx-user nav_icon'></i> 
                         <span class="nav_name">Conta</span>
-                    </a> <a href="~/App/Mensagens" class="nav_link">
-                        <i class='bx bx-message-square-detail nav_icon'></i> 
-                        <span class="nav_name">Mensagens</span> </a>
+                    </a> 
                     <a href="~/App/Doar" class="nav_link"> 
                         <i class='bx bx-bookmark nav_icon'></i> 
                         <span class="nav_name">Doação Consciente</span> </a>
+                        <a href="~/App/Pets" class="nav_link">
+                        <i class='bx bx-message-square-detail nav_icon'></i> 
+                        <span class="nav_name">Meus Pets</span>
+                    </a>
 
                 </div>
             </div> <a href="~/Home" class="nav_link"> 

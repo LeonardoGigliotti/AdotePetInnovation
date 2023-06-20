@@ -30,7 +30,7 @@ namespace AdotePetInnovation.Controllers
         {
             return View();
         }
-        public IActionResult Mensagens()
+        public IActionResult Pets()
         {
             return View();
         }
