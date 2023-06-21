@@ -1,6 +1,7 @@
 ﻿using AdotePetInnovation.Models;
 using AdotePetInnovation.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
 
 namespace AdotePetInnovation.Controllers
 {
@@ -10,7 +11,7 @@ namespace AdotePetInnovation.Controllers
 
         private readonly IPublicarRepository _publicarRepository;
         private readonly IContaRepository _contaRepository;
-
+        
         public AppController(IPublicarRepository publicarRepository, IContaRepository contarepository, ILogger<AppController> logger)
         {
             _contaRepository = contarepository;
@@ -19,7 +20,6 @@ namespace AdotePetInnovation.Controllers
         }
         public IActionResult Index()
         {
-            var dogs = _publicarRepository.FindAll();
             return View();
         }
         public IActionResult Doar()
@@ -31,6 +31,10 @@ namespace AdotePetInnovation.Controllers
             return View();
         }
         public IActionResult Pets()
+        {
+            return View();
+        }
+        public IActionResult Info()
         {
             return View();
         }

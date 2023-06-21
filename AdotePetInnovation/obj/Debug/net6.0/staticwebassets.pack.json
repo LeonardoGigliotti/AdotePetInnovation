@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\AdotePetInnovation.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon.png"
+    },
+    {
       "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -15,6 +27,14 @@
     {
       "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
     },
     {
       "Id": "C:\\Users\\leona\\Desktop\\AdotePetInnovation\\AdotePetInnovation\\wwwroot\\favicon.ico",
