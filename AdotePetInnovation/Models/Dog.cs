@@ -1,5 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
@@ -11,39 +11,38 @@ namespace AdotePetInnovation.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        public string? Id { get; set; }
 
         [BsonElement("name")]
         [JsonPropertyName("Name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [BsonElement("idade")]
         [JsonPropertyName("Idade")]
-        public string Idade { get; set; }
+        public string? Idade { get; set; }
 
         [BsonElement("raca")]
         [JsonPropertyName("Raca")]
-        public string Raca { get; set; }
+        public string? Raca { get; set; }
 
         [BsonElement("porte")]
         [JsonPropertyName("Porte")]
-        public string Porte { get; set; }
+        public string? Porte { get; set; }
 
         [BsonElement("foto")]
         [JsonPropertyName("Foto")]
-        public string Foto { get; set; }
+        public string? Foto { get; set; }
 
         [BsonElement("cidade")]
         [JsonPropertyName("Cidade")]
-        public string Cidade { get; set; }
+        public string? Cidade { get; set; }
 
         [BsonElement("estado")]
         [JsonPropertyName("Estado")]
-        public string Estado { get; set; }
+        public string? Estado { get; set; }
 
         [BsonElement("celular")]
         [JsonPropertyName("Celular")]
-        public string Celular { get; set; }
-
+        public string? Celular { get; set; }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using AdotePetInnovation.Models;
 using AdotePetInnovation.Repositories;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdotePetInnovation.Controllers
@@ -8,14 +7,14 @@ namespace AdotePetInnovation.Controllers
     public class SigninController : Controller
     {
         private readonly ILogger<SigninController> _logger;
-
         private readonly IUserRepository _repo;
-        public SigninController(IUserRepository repo
-, ILogger<SigninController> logger            )
+
+        public SigninController(IUserRepository repo, ILogger<SigninController> logger)
         {
             _repo = repo;
             _logger = logger;
         }
+
         // GET: Signup
         public ActionResult Login()
         {
@@ -27,12 +26,13 @@ namespace AdotePetInnovation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(SigninViewModel signin)
         {
-            var user = await _repo.GetByEmailAsync(signin.Email);
-            if(user != null && user.Password == signin.Password){
+            var user = await _repo.GetByEmailAsync(signin.Email ?? throw new Exception("usuario/senha invalido"));
+            if (user != null && user.Password == signin.Password)
+            {
                 return RedirectToAction("Index",
                         "App");
             }
-            ModelState.AddModelError("email","usuario/senha invalido");
+            ModelState.AddModelError("email", "usuario/senha invalido");
             return View();
         }
 
