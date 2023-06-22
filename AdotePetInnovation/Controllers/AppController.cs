@@ -53,6 +53,9 @@ namespace AdotePetInnovation.Controllers
                 Raca = model.raca,
                 Porte = model.porte,
                 Foto = model.foto,
+                Foto1 = model.foto1,
+                Foto2 = model.foto2,
+                Foto3 = model.foto3,
                 Cidade = model.cidade,
                 Estado = model.estado,
                 Celular = model.celular

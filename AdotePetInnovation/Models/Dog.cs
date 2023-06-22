@@ -33,6 +33,18 @@ namespace AdotePetInnovation.Models
         [JsonPropertyName("Foto")]
         public string? Foto { get; set; }
 
+        [BsonElement("foto1")]
+        [JsonPropertyName("Foto1")]
+        public string? Foto1 { get; set; }
+
+        [BsonElement("foto2")]
+        [JsonPropertyName("Foto2")]
+        public string? Foto2 { get; set; }
+
+        [BsonElement("foto3")]
+        [JsonPropertyName("Foto3")]
+        public string? Foto3 { get; set; }
+
         [BsonElement("cidade")]
         [JsonPropertyName("Cidade")]
         public string? Cidade { get; set; }
