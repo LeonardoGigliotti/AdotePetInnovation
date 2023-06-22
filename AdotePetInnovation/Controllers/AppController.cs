@@ -1,5 +1,6 @@
 ﻿using AdotePetInnovation.Models;
 using AdotePetInnovation.Repositories;
+using AdotePetInnovation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 
@@ -20,7 +21,10 @@ namespace AdotePetInnovation.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var indexViewModel = new IndexViewModel();
+            indexViewModel.Dogs = _publicarRepository.GetAllAsync().Result;
+
+            return View(indexViewModel);
         }
         public IActionResult Doar()
         {
