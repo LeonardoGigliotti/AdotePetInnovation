@@ -1,5 +1,5 @@
-﻿using AdotePetInnovation.Models;
-using AdotePetInnovation.Repositories;
+﻿using AdotePetInnovation.Repositories;
+using AdotePetInnovation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdotePetInnovation.Controllers

@@ -1,4 +1,4 @@
-namespace AdotePetInnovation.Models
+namespace AdotePetInnovation.ViewModels
 {
     public class ErrorViewModel
     {

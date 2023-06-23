@@ -1,4 +1,4 @@
-﻿using AdotePetInnovation.Models;
+﻿using AdotePetInnovation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
