@@ -28,6 +28,11 @@ namespace AdotePetInnovation.Controllers
             return View();
         }
 
+        public IActionResult Dicas()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
