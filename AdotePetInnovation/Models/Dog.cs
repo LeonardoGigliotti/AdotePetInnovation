@@ -13,6 +13,9 @@ namespace AdotePetInnovation.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
+        [JsonPropertyName("Usuario")]
+        public string? Usuario { get; set; }
+
         [BsonElement("name")]
         [JsonPropertyName("Name")]
         public string? Name { get; set; }

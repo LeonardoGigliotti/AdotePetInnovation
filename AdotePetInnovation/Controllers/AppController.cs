@@ -40,7 +40,9 @@ namespace AdotePetInnovation.Controllers
         public IActionResult Pets()
         {
             var indexViewModel = new IndexViewModel();
-            indexViewModel.Dogs = _publicarRepository.GetAllAsync().Result;
+
+            var email = HttpContext.Session.GetString("userEmail");
+            indexViewModel.Dogs = _publicarRepository.GetByUserEmailAsync(email).Result;
 
             return View(indexViewModel);
         }

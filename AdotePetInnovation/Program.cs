@@ -13,6 +13,11 @@ namespace AdotePetInnovation
             builder.Services.ConfigureMongoDBSettings(builder.Configuration);
             builder.Services.ConfigureRepositories();
 
+            builder.Services.AddDistributedMemoryCache();
+            builder.Services.AddSession();
+
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -25,6 +30,8 @@ namespace AdotePetInnovation
 
             app.UseHttpsRedirection(    );
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 

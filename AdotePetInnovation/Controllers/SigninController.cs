@@ -29,8 +29,10 @@ namespace AdotePetInnovation.Controllers
             var user = await _repo.GetByEmailAsync(signin.Email ?? throw new Exception("usuario/senha invalido"));
             if (user != null && user.Password == signin.Password)
             {
-                return RedirectToAction("Index",
-                        "App");
+                HttpContext.Session.SetString("userId", user.Id);
+                HttpContext.Session.SetString("userName", user.Name);
+                HttpContext.Session.SetString("userEmail", user.Email);
+                return RedirectToAction("Index", "App");
             }
             ModelState.AddModelError("email", "usuario/senha invalido");
             return View();
