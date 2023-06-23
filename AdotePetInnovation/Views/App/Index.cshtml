@@ -30,10 +30,10 @@
                 <a class="nav_logo"> <img src="~/img/iconlogo.png" width="30"/>
                     <span class="nav_logo-name">AdotePet</span> </a>
                 <div class="nav_list"> 
-                    <a href="#" class="nav_link active"> 
+                    <a href="" class="nav_link active"> 
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Menu</span>
-                    </a> <a href="~/App/Conta" class="nav_link">
+                    </a> <a href="~/App/Info" class="nav_link">
                         <i class='bx bx-user nav_icon'></i> 
                         <span class="nav_name">Conta</span>
                     </a> 
@@ -61,11 +61,10 @@
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="@pet.Foto" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Abrir</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Contato</button>
+                      <a asp-action="Info" asp-route-id="@pet.Id" type="button" class="btn btn-sm btn-outline-secondary">Abrir</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>

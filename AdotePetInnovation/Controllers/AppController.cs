@@ -38,10 +38,15 @@ namespace AdotePetInnovation.Controllers
         {
             return View();
         }
-        public IActionResult Info()
-        {
-            return View();
+
+        [HttpGet]
+        public IActionResult Info(string Id)
+        {        
+              var dog = _publicarRepository.GetByIdAsync(Id).Result;
+              return View(dog); 
         }
+
+
 
         [HttpPost]
         public IActionResult Publicar(PublicarRequest model)
