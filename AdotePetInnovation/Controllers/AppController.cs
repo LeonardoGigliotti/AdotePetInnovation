@@ -2,7 +2,6 @@
 using AdotePetInnovation.Repositories;
 using AdotePetInnovation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using MongoDB.Driver;
 
 namespace AdotePetInnovation.Controllers
 {
@@ -12,13 +11,14 @@ namespace AdotePetInnovation.Controllers
 
         private readonly IPublicarRepository _publicarRepository;
         private readonly IContaRepository _contaRepository;
-        
+
         public AppController(IPublicarRepository publicarRepository, IContaRepository contarepository, ILogger<AppController> logger)
         {
             _contaRepository = contarepository;
             _publicarRepository = publicarRepository;
             _logger = logger;
         }
+
         public IActionResult Index()
         {
             var indexViewModel = new IndexViewModel();
@@ -26,27 +26,28 @@ namespace AdotePetInnovation.Controllers
 
             return View(indexViewModel);
         }
+
         public IActionResult Doar()
         {
             return View();
         }
+
         public IActionResult Conta()
         {
             return View();
         }
+
         public IActionResult Pets()
         {
             return View();
         }
 
-        [HttpGet]
         public IActionResult Info(string Id)
-        {        
-              var dog = _publicarRepository.GetByIdAsync(Id).Result;
-              return View(dog); 
+        {
+            var dog = _publicarRepository.GetByIdAsync(Id).Result;
+
+            return View(dog);
         }
-
-
 
         [HttpPost]
         public IActionResult Publicar(PublicarRequest model)
@@ -73,14 +74,14 @@ namespace AdotePetInnovation.Controllers
         {
             _contaRepository.CreateAsync(new DoadorEAdotante
             {
-                Name= model.Nome,
-                Email= model.Email,
-                Rg= model.Rg,
-                Cpf= model.Cpf,
-                Celular= model.Celular,
-                Cidade= model.Cidade,
-                Estado= model.Estado,
-                Cep= model.Cep
+                Name = model.Nome,
+                Email = model.Email,
+                Rg = model.Rg,
+                Cpf = model.Cpf,
+                Celular = model.Celular,
+                Cidade = model.Cidade,
+                Estado = model.Estado,
+                Cep = model.Cep
             });
             return new JsonResult(model);
         }
