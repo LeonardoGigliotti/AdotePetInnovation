@@ -74,6 +74,13 @@ namespace AdotePetInnovation.Controllers
             return new JsonResult(model);
         }
 
+        [HttpDelete]
+        public IActionResult Excluir(string Id)
+        {
+            _publicarRepository.DeleteAsync(Id);
+            return new JsonResult(true);
+        }
+
         [HttpPost]
         public IActionResult Conta(ContaRequest model)
         {
