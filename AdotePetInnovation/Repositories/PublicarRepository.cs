@@ -16,7 +16,7 @@ public class PublicarRepository : IPublicarRepository
 
     public async Task CreateAsync(Dog dog)
     {
-        dog.Usuario = _contextAccessor.HttpContext.Session.GetString("userEmail");
+        dog.Usuario = _contextAccessor.HttpContext?.Session.GetString("userEmail");
         await _collection.InsertOneAsync(dog);
     }
 

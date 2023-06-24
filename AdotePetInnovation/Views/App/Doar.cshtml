@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Dog;
+
+@{
     ViewData["Title"] = "Adotepetinnovation";
 }
 
@@ -12,6 +14,7 @@
                     dataType: "json",
                     data: {
                         model: {
+                            id: '@Model.Id',
                             nome: $("#txtNome").val(),
                             idade: $("#txtIdade").val(),
                             raca: $("#txtRaca").val(),
@@ -26,7 +29,8 @@
                         }
                     },
                     success: function () {
-                        alert("Pet incluido com sucesso")
+                        alert("Pet publicado com sucesso");
+                        window.location = "/App/Pets";
                     }
                 });
             });
@@ -54,83 +58,86 @@
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a class="nav_logo"> <img src="~/img/iconlogo.png" width="30"/>
-                    <span class="nav_logo-name">AdotePet</span> </a>
+                <a class="nav_logo">
+                    <img src="~/img/iconlogo.png" width="30" />
+                    <span class="nav_logo-name">AdotePet</span>
+                </a>
                 <div class="nav_list">
                     <a href="~/App/Index" class="nav_link">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Menu</span>
-                    </a> 
+                    </a>
                     <a href="~/App/Conta" class="nav_link">
-                        <i class='bx bx-user nav_icon'></i> 
+                        <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Conta</span>
-                    </a> 
+                    </a>
                     <a href="~/App/Doar" class="nav_link active">
-                        <i class='bx bx-bookmark nav_icon'></i> 
-                        <span class="nav_name">Doação Consciente</span> 
-                        </a>
-                        <a href="~/App/Pets" class="nav_link">
-                        <i class='bx bx-message-square-detail nav_icon'></i> 
+                        <i class='bx bx-bookmark nav_icon'></i>
+                        <span class="nav_name">Doação Consciente</span>
+                    </a>
+                    <a href="~/App/Pets" class="nav_link">
+                        <i class='bx bx-message-square-detail nav_icon'></i>
                         <span class="nav_name">Meus Pets</span>
                     </a>
 
                 </div>
-            </div> <a href="~/Home" class="nav_link"> 
-                <i class='bx bx-log-out nav_icon'></i> 
-                <span class="nav_name">Sair</span> </a>
+            </div> <a href="~/Home" class="nav_link">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Sair</span>
+            </a>
         </nav>
     </div>
 
     <h1>Abaixo digite as informações do Pet que deseja Doar</h1>
-   <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input type="text" class="form-control" id="txtNome" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Idade</label>
-    <input type="text" class="form-control" id="txtIdade" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Raça</label>
-    <input type="text" class="form-control" id="txtRaca" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Porte</label>
-    <input type="text" class="form-control" id="txtPorte" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Cidade</label>
-    <input type="text" class="form-control" id="txtCidade" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Estado</label>
-    <input type="text" class="form-control" id="txtEstado" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Celular para contato</label>
-    <input type="number" class="form-control" id="txtCelular" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-        <h1>Foto para o Menu</h1>
-    <label for="exampleInputEmail1" class="form-label"></label>
-    <input type="text" class="form-control" id="txtFoto" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-        <h1>Fotos para o Carrossel</h1>
-    <label for="exampleInputEmail1" class="form-label">Foto 1</label>
-    <input type="text" class="form-control" id="txtFoto1" aria-describedby="emailHelp">
-  </div>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome</label>
+            <input asp-for="Name" type="text" class="form-control" id="txtNome" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Idade</label>
+            <input asp-for="Idade" type="text" class="form-control" id="txtIdade" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Raça</label>
+            <input asp-for="Raca" type="text" class="form-control" id="txtRaca" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Porte</label>
+            <input asp-for="Porte" type="text" class="form-control" id="txtPorte" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Cidade</label>
+            <input asp-for="Cidade" type="text" class="form-control" id="txtCidade" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Estado</label>
+            <input asp-for="Estado" type="text" class="form-control" id="txtEstado" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Celular para contato</label>
+            <input asp-for="Celular" type="number" class="form-control" id="txtCelular" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <h1>Foto para o Menu</h1>
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input asp-for="Foto" type="text" class="form-control" id="txtFoto" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <h1>Fotos para o Carrossel</h1>
+            <label for="exampleInputEmail1" class="form-label">Foto 1</label>
+            <input asp-for="Foto1" type="text" class="form-control" id="txtFoto1" aria-describedby="emailHelp">
+        </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Foto 2</label>
-            <input type="text" class="form-control" id="txtFoto2" aria-describedby="emailHelp">
+            <input asp-for="Foto2" type="text" class="form-control" id="txtFoto2" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Foto 3</label>
-            <input type="text" class="form-control" id="txtFoto3" aria-describedby="emailHelp">
+            <input asp-for="Foto3" type="text" class="form-control" id="txtFoto3" aria-describedby="emailHelp">
         </div>
-  <div class="btn btn-primary" id="MeuBotao">
-      publicar
-  </div>
-   </form>
+        <div class="btn btn-primary" id="MeuBotao">
+            publicar
+        </div>
+    </form>
 </body>

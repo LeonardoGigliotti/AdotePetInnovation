@@ -29,9 +29,9 @@ namespace AdotePetInnovation.Controllers
             var user = await _repo.GetByEmailAsync(signin.Email ?? throw new Exception("usuario/senha invalido"));
             if (user != null && user.Password == signin.Password)
             {
-                HttpContext.Session.SetString("userId", user.Id);
-                HttpContext.Session.SetString("userName", user.Name);
-                HttpContext.Session.SetString("userEmail", user.Email);
+                HttpContext.Session.SetString("userId", user?.Id ?? String.Empty);
+                HttpContext.Session.SetString("userName", user?.Name ?? String.Empty);
+                HttpContext.Session.SetString("userEmail", user?.Email ?? String.Empty);
                 return RedirectToAction("Index", "App");
             }
             ModelState.AddModelError("email", "usuario/senha invalido");

@@ -27,9 +27,16 @@ namespace AdotePetInnovation.Controllers
             return View(indexViewModel);
         }
 
-        public IActionResult Doar()
+        public IActionResult Doar(string Id)
         {
-            return View();
+            if (Id == null)
+                return View(new Dog());
+            else
+            {
+                var dog = _publicarRepository.GetByIdAsync(Id).Result;
+
+                return View(dog);
+            }
         }
 
         public IActionResult Conta()
@@ -57,20 +64,40 @@ namespace AdotePetInnovation.Controllers
         [HttpPost]
         public IActionResult Publicar(PublicarRequest model)
         {
-            _publicarRepository.CreateAsync(new Dog
+            if (model.id == null)
             {
-                Name = model.nome,
-                Idade = model.idade,
-                Raca = model.raca,
-                Porte = model.porte,
-                Foto = model.foto,
-                Foto1 = model.foto1,
-                Foto2 = model.foto2,
-                Foto3 = model.foto3,
-                Cidade = model.cidade,
-                Estado = model.estado,
-                Celular = model.celular
-            });
+                _publicarRepository.CreateAsync(new Dog
+                {
+                    Name = model.nome,
+                    Idade = model.idade,
+                    Raca = model.raca,
+                    Porte = model.porte,
+                    Foto = model.foto,
+                    Foto1 = model.foto1,
+                    Foto2 = model.foto2,
+                    Foto3 = model.foto3,
+                    Cidade = model.cidade,
+                    Estado = model.estado,
+                    Celular = model.celular
+                });
+            }
+            else
+            {
+                var dog = _publicarRepository.GetByIdAsync(model.id).Result;
+                dog.Name = model.nome;
+                dog.Idade = model.idade;
+                dog.Raca = model.raca;
+                dog.Porte = model.porte;
+                dog.Foto = model.foto;
+                dog.Foto1 = model.foto1;
+                dog.Foto2 = model.foto2;
+                dog.Foto3 = model.foto3;
+                dog.Cidade = model.cidade;
+                dog.Estado = model.estado;
+                dog.Celular = model.celular;
+
+                _publicarRepository.UpdateAsync(dog);
+            }
             return new JsonResult(model);
         }
 

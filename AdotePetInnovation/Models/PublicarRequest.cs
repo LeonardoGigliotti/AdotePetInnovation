@@ -2,6 +2,7 @@
 {
     public class PublicarRequest
     {
+        public string? id { get; set; }
         public string? nome { get; set; }
         public string? idade { get; set; }
         public string? raca { get; set; }
