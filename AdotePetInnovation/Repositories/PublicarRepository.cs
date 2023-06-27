@@ -22,6 +22,10 @@ public class PublicarRepository : IPublicarRepository
 
     public async Task<List<Dog>> GetAllAsync() =>
         await _collection.Find(_ => true).ToListAsync();
+
+    public async Task<List<Dog>> GetFilterDogsAsync(string raca) =>
+        await _collection.Find( _=> _.Raca.ToLower().Contains(raca.ToLower())).ToListAsync();
+
     public async Task<List<Dog>> GetByUserEmailAsync(string email) =>
        await _collection.Find(_ => _.Usuario == email).ToListAsync();
 

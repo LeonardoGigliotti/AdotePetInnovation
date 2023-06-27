@@ -19,12 +19,29 @@ namespace AdotePetInnovation.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string raca)
         {
             var indexViewModel = new IndexViewModel();
-            indexViewModel.Dogs = _publicarRepository.GetAllAsync().Result;
+
+            if (!String.IsNullOrEmpty(raca))
+                indexViewModel.Dogs = _publicarRepository.GetFilterDogsAsync(raca).Result;
+            else
+                indexViewModel.Dogs = _publicarRepository.GetAllAsync().Result;
 
             return View(indexViewModel);
+        }
+
+        [HttpPost]
+        public ActionResult<IndexViewModel> FiltrarOuResetar(string nome)
+        {
+            var indexViewModel = new IndexViewModel();
+
+            if (nome == null)
+                indexViewModel.Dogs = _publicarRepository.GetAllAsync().Result;
+            else
+                indexViewModel.Dogs = _publicarRepository.GetFilterDogsAsync(nome).Result;
+
+            return indexViewModel;
         }
 
         public IActionResult Doar(string Id)
